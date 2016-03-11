@@ -1,12 +1,17 @@
 \documentclass[3p,twocolumn]{elsarticle}
-
+\pdfoutput=1
 \usepackage[acronym,toc]{glossaries}
+\usepackage{amsmath}
 \include{acros}
 \makeglossaries
 
 \usepackage{float} % used to help position figures with the H modifier
 
 %%%%%%%%%%% stuff for syntax highlighting and code blocks %%%%%%%%%%%%%%
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+
 \usepackage{listings} % for highlighted code blocks
 \usepackage{color}
 
@@ -34,7 +39,6 @@
 \usepackage{booktabs} % nice rules for tables
 \usepackage{microtype} % if using PDF
 \usepackage{xspace}
-\usepackage{hyperref}
 \newcommand{\units}[1] {\:\text{#1}}%
 \newcommand{\SN}{S$_N$}%{S$_\text{N}$}%{$S_N$}%
 \newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
@@ -50,8 +54,6 @@
 %\newwatermark[allpages,color=black!5,angle=45,scale=6,xpos=-40,ypos=40]{DRAFT}
 
 
-\usepackage{lineno,hyperref}
-\modulolinenumbers[5]
 
 \journal{Advances in Engineering Software}
 
@@ -88,7 +90,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\tableofcontests
 \begin{frontmatter}
 
 \title{Fundamental concepts in the Cyclus nuclear fuel cycle simulation framework}
